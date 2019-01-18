@@ -16,7 +16,6 @@ public class MessageController {
 	
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String welcomeMsg(HttpServletRequest httpServletRequest) {
-		System.out.println("HELLO WORLD :::: ");
 		return "Hello World..!";
 		
 	}
