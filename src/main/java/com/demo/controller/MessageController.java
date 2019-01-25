@@ -32,9 +32,8 @@ public class MessageController {
 	}
 	
 	@RequestMapping(value="/getAllMsgs", method=RequestMethod.GET)
-	public  void getAllMsgs(@RequestBody Message msg, HttpServletRequest httpServletRequest) {
-		messages.add(msg);
-		System.out.println(msg.getMessage());		
+	public  List<Message> getAllMsgs(@RequestBody Message msg, HttpServletRequest httpServletRequest) {
+		return messages;
 	}
 
 }
