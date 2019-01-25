@@ -1,5 +1,8 @@
 package com.demo.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,6 +17,8 @@ import com.demo.modal.Message;
 @RequestMapping("/msg")
 public class MessageController {
 	
+	List<Message> messages = new ArrayList<Message>();
+	
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String welcomeMsg(HttpServletRequest httpServletRequest) {
 		return "Hello World..!";
@@ -21,10 +26,15 @@ public class MessageController {
 	}
 	
 	@RequestMapping(value="/sendMsg", method=RequestMethod.POST)
-	public  void authenticateUser(@RequestBody Message msg, HttpServletRequest httpServletRequest) {
-		
-		System.out.println(msg.getMessage());
-		
+	public  void sendMsg(@RequestBody Message msg, HttpServletRequest httpServletRequest) {
+		messages.add(msg);
+		System.out.println(msg.getMessage());		
+	}
+	
+	@RequestMapping(value="/getAllMsgs", method=RequestMethod.GET)
+	public  void getAllMsgs(@RequestBody Message msg, HttpServletRequest httpServletRequest) {
+		messages.add(msg);
+		System.out.println(msg.getMessage());		
 	}
 
 }
