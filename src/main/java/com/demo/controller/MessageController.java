@@ -32,7 +32,7 @@ public class MessageController {
 	}
 	
 	@RequestMapping(value="/getAllMsgs", method=RequestMethod.GET)
-	public  List<Message> getAllMsgs(@RequestBody Message msg, HttpServletRequest httpServletRequest) {
+	public  List<Message> getAllMsgs(HttpServletRequest httpServletRequest) {
 		return messages;
 	}
 
