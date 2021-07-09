@@ -2,7 +2,8 @@
 
 ## APIs:
 Default Get Message API: <br/>
-localhost:8989/demo/msg/ <br/><br/>
+``` localhost:8989/demo/msg/ ```
+<br/><br/>
 <img src="https://github.com/syamdanda/springBootDemo/blob/master/screenshots/defaultGet.png" alt="defaultGet"/>
 <br/><br/><hr/>
 Send Mesaage API <br/>
