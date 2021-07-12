@@ -14,5 +14,5 @@ Send Mesaage API <br/><br/>
 
 List/Get All Msgs <br/><br/>
 ``` localhost:8989/demo/getAllMsgs ``` <br/><br/>
-<img src="https://github.com/syamdanda/springBootDemo/blob/master/screenshots/getAllMsgs.png" alt="defaultGet"/><br/>
+<img src="https://github.com/syamdanda/springBootDemo/blob/master/screenshots/getAllMsgs.png" alt="defaultGet"/> <br/><br/>
 
